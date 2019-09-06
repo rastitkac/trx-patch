@@ -139,7 +139,7 @@ if (!function_exists('trx_addons_get_share_links')) {
 					$url['attributes']['target'] = '_blank';
 				if ($args['counters'])
 					$url['attributes']['data-count'] = $fn;
-				$output .= '<a class="social_item'.(!empty($popup) ? ' social_item_popup' : '').'"';
+				$output .= '<a target="_blank" class="social_item"';
 				foreach($url['attributes'] as $k=>$v) {
 					$v = str_replace(
 									array('{id}', '{link}', '{title}', '{descr}', '{image}'),
